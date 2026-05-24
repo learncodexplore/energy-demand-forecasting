@@ -137,8 +137,8 @@ Open **Command Prompt** (`cmd.exe`), not PowerShell, and run:
 mkdir energy-demand-forecasting
 cd energy-demand-forecasting
 code .
-python -m venv venv
-venv\Scripts\activate
+python -m venv vro-tf
+vro-tf\Scripts\activate
 pip install pandas numpy matplotlib scikit-learn jupyter
 pip freeze > requirements.txt
 git init
@@ -155,7 +155,7 @@ git push -u origin main
 ```
 
 > If you re-open the project later, simply run
-> `venv\Scripts\activate` from the project folder to re-activate the
+> `vro-tf\Scripts\activate` from the project folder to re-activate the
 > virtual environment.
 
 ---
@@ -168,7 +168,7 @@ git push -u origin main
    next to the `+` icon).
 3. Activate the virtual environment in that terminal:
    ```bat
-   venv\Scripts\activate
+   vro-tf\Scripts\activate
    ```
 4. (Optional) Open `notebooks/00_data_verification.ipynb` and run the
    cells to verify the environment and the dataset.
@@ -269,26 +269,8 @@ The following figures are saved in `reports/figures/`:
 
 These figures can be inserted directly into the project report.
 
----
 
-## 12. Report writing guidance
-
-The coding project is **only one half** of the deliverable. The other
-half is a written report of about **20 pages**. A detailed outline is
-provided in [`reports/report_outline.md`](reports/report_outline.md),
-including a recommended page distribution.
-
-The report should clearly present:
-
-- Project topic and motivation (environmental engineering view).
-- Dataset, methodology and implementation choices.
-- Results (use the figures saved by the project).
-- Discussion, conclusions and ideas for future work.
-- A proper list of references in a consistent citation style.
-
----
-
-## 13. Future machine-learning extension
+## 12. Future machine-learning extension
 
 The project is intentionally simple, but it is structured so that an
 ML extension can be added later without rewriting everything:
@@ -308,7 +290,7 @@ course on data-driven energy analytics.
 
 ---
 
-## 14. References
+## 13. References
 
 - Open Power System Data. *Time series* package, version 2020-10-06.
   <https://data.open-power-system-data.org/time_series/>
@@ -316,6 +298,4 @@ course on data-driven energy analytics.
   <https://transparency.entsoe.eu/>
 - pandas documentation. <https://pandas.pydata.org/docs/>
 - matplotlib documentation. <https://matplotlib.org/stable/>
-- Hyndman, R. J., & Athanasopoulos, G. (2021).
-  *Forecasting: Principles and Practice* (3rd ed.). OTexts.
-  <https://otexts.com/fpp3/>
+
